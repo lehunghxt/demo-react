@@ -2,6 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route,
   // Link,
@@ -14,7 +15,7 @@ import Header from './components/Header/Header';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <div className="App">
       <Header/>
         <Switch>
@@ -23,7 +24,7 @@ function App() {
           <Route path='*' exact={true} component={NotFound} />
         </Switch>
     </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
