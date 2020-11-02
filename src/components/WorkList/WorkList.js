@@ -18,7 +18,7 @@ export class WorkList extends Component {
                      etd: 'tmp',
                      target: '123',
                      require: 'true',
-                     location: 'hcm'
+                     location: 'hcmhcmhcmhcmhcmhcmhcmhcmhcm'
                  },
                  {
                     id: 2,
