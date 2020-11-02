@@ -8,9 +8,9 @@ function WorkItem({work}) {
         <div>
             <div className='intro'>
                 <div className='introTitle' onClick={()=>setShowInfo(!showInfo)}>
-                    <p>
+                    <h4>
                         {work.name}
-                    </p>
+                    </h4>
                 </div>
                 <div className='gotoDetail'>
                     <Link to={"workDetail/"+work.id}>
@@ -22,29 +22,24 @@ function WorkItem({work}) {
             <div className='detail' style={{ display: showInfo ? "block" : "none" }}>
                 <table>
                     <tbody>
-                    <tr>
-                            <th>File#:</th>
-                            <td>{work.file}</td>
-                            <th>Shipment:</th>
-                            <td>{work.shipment}</td>
+                        <tr>
+                            <th>Target:</th>
+                            <td>{work.target}</td>
+                            <th>Shiptype:</th>
+                            <td>{work.shiptype}</td>
                         </tr>
+                        
                         <tr>
                             <th>House:</th>
                             <td>{work.house}</td>
-                            <th>Shiptype:</th>
-                            <td>{work.shiptype}</td>
+                            <th>CDs #:</th>
+                            <td>{work.cds}</td>
                         </tr>
                         <tr>
                             <th>Qty:</th>
                             <td>{work.qty}</td>
-                            <th>ETD/ATA:</th>
+                            <th>ATA:</th>
                             <td>{work.etd}</td>
-                        </tr>
-                        <tr>
-                            <th>Target:</th>
-                            <td>{work.target}</td>
-                            <th>Required:</th>
-                            <td>{work.require}</td>
                         </tr>
                         <tr>
                             <th>Location:</th>
