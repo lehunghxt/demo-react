@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaAlignJustify } from 'react-icons/fa';
+import { BiEdit } from 'react-icons/bi';
 import {Link} from "react-router-dom";
 
 function WorkItem({work}) {
@@ -14,7 +14,7 @@ function WorkItem({work}) {
                 </div>
                 <div className='gotoDetail'>
                     <Link to={"workDetail/"+work.id}>
-                        <FaAlignJustify id='iconDetail'/>
+                        <BiEdit id='iconDetail'/>
                     </Link>
                     
                 </div>
