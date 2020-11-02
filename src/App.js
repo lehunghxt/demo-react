@@ -15,7 +15,6 @@ import Header from './components/Header/Header';
 import WorkAssigmentList from './components/WorkAssignmentList/WorkAssigmentList';
 
 function App() {
-  // const location = useLocation();
   return (
     <HashRouter>
     <div className="App">
@@ -23,7 +22,7 @@ function App() {
       <div id='linkHeader'>
         <div id='home-page' className='link-active'>
           <Link to="/">
-              Việc Cần Làm
+              Việc Cần Làm 123a
           </Link>
         </div>
         <div id='home-assigment'>
