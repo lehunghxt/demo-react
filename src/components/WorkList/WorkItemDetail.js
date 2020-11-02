@@ -37,8 +37,11 @@ function WorkItemDetail(props) {
         }
     }
     const renderPhotos = (source) => {
-        return source.map((photo) => {
-            return <img id='previewImage' src={photo} key={photo}/>
+        return source.map((photo, index) => {
+            return <div>
+                        <img id='previewImage' src={photo} key={photo}/>
+                        <p>Hình ảnh-{index+1}</p>
+                    </div> 
         })
     }
     return (
