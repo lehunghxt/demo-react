@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { BiEdit } from 'react-icons/bi';
+import { BiListPlus } from 'react-icons/bi';
 import {Link} from "react-router-dom";
 
 function WorkAssignmentItems({work}) {
@@ -8,12 +8,12 @@ function WorkAssignmentItems({work}) {
         <div>
             <div className='intro'>
                 <div className='introTitle' onClick={()=>setShowInfo(!showInfo)}>
-                    <h4>
+                    <h5>
                         {work.name}
-                    </h4>
+                    </h5>
                 </div>
                 <div className='gotoDetail'>
-                    <a href='#'>Tiếp Nhận</a>
+                    <BiListPlus id='iconAssigment'/>
                 </div>
             </div>
             <div className='detail' style={{ display: showInfo ? "block" : "none" }}>

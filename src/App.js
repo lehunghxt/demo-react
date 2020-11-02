@@ -22,7 +22,7 @@ function App() {
       <div id='linkHeader'>
         <div id='home-page' className='link-active'>
           <Link to="/">
-              Việc Cần Làm 123a
+              Việc Cần Làm
           </Link>
         </div>
         <div id='home-assigment'>

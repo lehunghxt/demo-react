@@ -55,7 +55,6 @@ export class WorkAssigmentList extends Component {
     render() {
         return (
             <div>
-                <h2>Danh Sách Công Việc Được Giao</h2>
                 {
                     this.state.works.map(work => {
                         return(
