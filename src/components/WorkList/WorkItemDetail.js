@@ -48,7 +48,7 @@ function WorkItemDetail(props) {
         <div className='workItemDetail'>
             <div className='workHead'>
                 <div className='titleWork'>
-                    <h6>Hien thi cong viec chi tiet {id}</h6>
+                    <h4>Job Name {id}</h4>
                 </div>
                 <button>Hoàn Thành</button>
             </div>
@@ -57,35 +57,35 @@ function WorkItemDetail(props) {
                     <tbody>
                         <tr>
                             <th>File #</th>
-                            <td></td>
+                            <td>F123</td>
                         </tr>
                         <tr>
                             <th>Account</th>
-                            <td></td>
+                            <td>PGI</td>
                         </tr>
                         <tr>
                             <th>Target Date</th>
-                            <td></td>
+                            <td>01/11/2020</td>
                         </tr>
                         <tr>
                             <th>Ship Mode</th>
-                            <td></td>
+                            <td>Air-LCL-Import</td>
                         </tr>
                         <tr>
                             <th>Qty</th>
-                            <td>123</td>
+                            <td>1 PK/ 2 KGS/ 3 CBM</td>
                         </tr>
                         <tr>
-                            <th>Cut Off</th>
-                            <td>tmp</td>
+                            <th>ATA</th>
+                            <td>01/11/2020</td>
                         </tr>
                         <tr>
                             <th>CDs #</th>
-                            <td>1</td>
+                            <td>11</td>
                         </tr>
                         <tr>
                             <th>Cont #</th>
-                            <td>true</td>
+                            <td>KAJS1938137</td>
                         </tr>
                         <tr>
                             <th>Location</th>

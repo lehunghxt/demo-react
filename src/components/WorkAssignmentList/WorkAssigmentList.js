@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import WorkItem from './WorkItem'
+import WorkAssignmentItems from './WorkAssignmentItems'
 
-export class WorkList extends Component {
+export class WorkAssigmentList extends Component {
     constructor(props) {
         super(props)
     
@@ -9,7 +9,7 @@ export class WorkList extends Component {
              works : [
                  {
                      id: 1,
-                     name: 'PGI-File.123-Job Name 1',
+                     name: 'PGI-File.123-Job Assigment Name 1',
                      file: 'file123',
                      shipment: 'datashipment',
                      house: 'datahouse',
@@ -23,7 +23,7 @@ export class WorkList extends Component {
                  },
                  {
                     id: 2,
-                    name: 'PGI-File.123-Job Name 2',
+                    name: 'PGI-File.123-Job Assigment Name 2',
                     file: 'file222',
                     shipment: 'datashipment22',
                     house: 'datahouse22',
@@ -37,7 +37,7 @@ export class WorkList extends Component {
                 },
                 {
                     id: 3,
-                    name: 'PGI-File.123-Job Name 3',
+                    name: 'PGI-File.123-Job Assigment Name 3',
                     file: 'file12333',
                     shipment: 'datashipment33',
                     house: 'datahouse33',
@@ -52,15 +52,14 @@ export class WorkList extends Component {
              ]
         }
     }
-    
     render() {
         return (
             <div>
-                <h2>Danh Sách Công Việc Cần Làm</h2>
+                <h2>Danh Sách Công Việc Được Giao</h2>
                 {
                     this.state.works.map(work => {
                         return(
-                            <WorkItem key={work.id} work={work}/>
+                            <WorkAssignmentItems key={work.id} work={work}/>
                         )
                     })
                 }
@@ -69,4 +68,4 @@ export class WorkList extends Component {
     }
 }
 
-export default WorkList
+export default WorkAssigmentList
