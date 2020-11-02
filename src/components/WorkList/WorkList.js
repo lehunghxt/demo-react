@@ -10,7 +10,7 @@ export class WorkList extends Component {
                  {
                      id: 1,
                      name: 'Cong viec 1',
-                     file: 'file123',
+                     file: 'file123file123file123file123file123',
                      shipment: 'datashipment',
                      house: 'datahouse',
                      shiptype: 'COD',
