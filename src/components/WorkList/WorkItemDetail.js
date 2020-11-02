@@ -66,7 +66,6 @@ function WorkItemDetail(props) {
                         <tr>
                             <th>Target Date</th>
                             <td></td>
-                            
                         </tr>
                         <tr>
                             <th>Ship Mode</th>
@@ -75,7 +74,6 @@ function WorkItemDetail(props) {
                         <tr>
                             <th>Qty</th>
                             <td>123</td>
-                            
                         </tr>
                         <tr>
                             <th>Cut Off</th>
@@ -84,7 +82,6 @@ function WorkItemDetail(props) {
                         <tr>
                             <th>CDs #</th>
                             <td>1</td>
-                            
                         </tr>
                         <tr>
                             <th>Cont #</th>
