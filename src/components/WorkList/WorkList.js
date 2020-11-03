@@ -52,7 +52,6 @@ export class WorkList extends Component {
              ]
         }
     }
-    
     render() {
         return (
             <div>
