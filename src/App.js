@@ -5,9 +5,7 @@ import {
   HashRouter,
   Switch,
   Route,
-  Link,
   NavLink,
-  useLocation 
 } from "react-router-dom";
 import WorkList from './components/WorkList/WorkList';
 import WorkItemDetail from './components/WorkList/WorkItemDetail';
@@ -22,19 +20,20 @@ function App() {
         <Header/>
         <div id='linkHeader' >
           <div id='home-page'>
-            <NavLink to="/" exact activeClassName='link-active'>
+            <NavLink to="/work" activeClassName='link-active'>
                 Việc Cần Làm
             </NavLink>
           </div>
           <div id='home-assigment'>
-            <NavLink to="/workassigment" exact activeClassName='link-active'>
+            <NavLink to="/workassigment" activeClassName='link-active'>
                 Việc Phân Công
             </NavLink>
           </div>
         </div>
           <Switch>
-            <Route exact path='/workDetail/:id' component={WorkItemDetail}></Route>
+            <Route exact path='/work/:id' component={WorkItemDetail}></Route>
             <Route exact path="/" component={WorkList} />
+            <Route exact path="/work" component={WorkList} />
             <Route exact path="/workassigment" component={WorkAssigmentList} />
             <Route path='*' exact={true} component={NotFound} />
           </Switch>

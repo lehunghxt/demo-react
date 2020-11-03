@@ -13,7 +13,7 @@ function WorkItem({work}) {
                     </h4>
                 </div>
                 <div className='gotoDetail'>
-                    <Link to={"workDetail/"+work.id}>
+                    <Link to={"work/"+work.id}>
                         <BiEdit id='iconDetail'/>
                     </Link>
                     
