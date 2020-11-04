@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import WorkAssignmentItems from './WorkAssignmentItems'
+import axios from 'axios'
 
 export class WorkAssigmentList extends Component {
     constructor(props) {
@@ -51,6 +52,17 @@ export class WorkAssigmentList extends Component {
                 }
              ]
         }
+    }
+    componentDidMount() {
+        console.log('WorkAssigmentList');
+        axios.get('https://jsonplaceholder.typicode.com/todos')
+        .then(res => {
+            console.log(res);
+            console.log('=============================================');
+        })
+        .catch(err => {
+            console.log(err);
+        })
     }
     render() {
         return (
