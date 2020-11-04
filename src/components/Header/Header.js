@@ -7,11 +7,8 @@ function Header() {
             <div className='header-left'>
                 <h3>Logo</h3>
             </div>
-            <div className='header-center'>
-                <h5>Username</h5>
-            </div>
             <div className='header-right'>
-                <h5>Logout</h5>
+                <h5>NV123 (Logout)</h5>
             </div>
         </div>
     )
